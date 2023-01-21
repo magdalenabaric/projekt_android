@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdoptButtonsFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/buttons2">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/slikaa"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        <Button
+            android:id="@+id/btnBack4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="60dp"
+            android:backgroundTint="@color/buttons"
+            android:fontFamily="@font/alata"
+            android:text="@string/back"
+            android:textColor="@color/adoptBackground"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        <Button
+            android:id="@+id/btnNext3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginEnd="70dp"
+            android:backgroundTint="@color/buttons"
+            android:fontFamily="@font/alata"
+            android:text="@string/next"
+            android:textColor="@color/adoptBackground"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="0dp"
+            android:layout_height="122dp"
+            android:background="@color/adoptBackground"
+            android:fontFamily="@font/alata"
+            android:text="@string/buttonsAdopt"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            android:textColor="#000000"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="322dp"
+            android:layout_height="363dp"
+            android:layout_marginTop="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+            <RadioButton
+                android:id="@+id/radioButton"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/buttons2"
+                android:button="?android:attr/listChoiceIndicatorMultiple"
+                android:buttonTint="#000000"
+                android:checked="false"
+                android:duplicateParentState="false"
+                android:fontFamily="@font/alata"
+                android:text="@string/calm"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radioButton2"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/buttons2"
+                android:button="?android:attr/listChoiceIndicatorMultiple"
+                android:buttonTint="#000000"
+                android:fontFamily="@font/alata"
+                android:text="@string/loyal"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radioButton3"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/buttons2"
+                android:button="?android:attr/listChoiceIndicatorMultiple"
+                android:buttonTint="#000000"
+                android:fontFamily="@font/alata"
+                android:text="@string/stubborn"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radioButton4"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/buttons2"
+                android:button="?android:attr/listChoiceIndicatorMultiple"
+                android:buttonTint="#000000"
+                android:fontFamily="@font/alata"
+                android:text="@string/courage"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radioButton5"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/buttons2"
+                android:button="?android:attr/listChoiceIndicatorMultiple"
+                android:buttonTint="#000000"
+                android:fontFamily="@font/alata"
+                android:text="@string/jolly"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radioButton6"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:background="@color/buttons2"
+                android:button="?android:attr/listChoiceIndicatorMultiple"
+                android:buttonTint="#000000"
+                android:fontFamily="@font/alata"
+                android:text="@string/temperament"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
